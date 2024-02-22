@@ -1,0 +1,16 @@
+<div class="header" [ngClass]="{ 'light': isLightTheme }">
+  <h1 class="title">iCalc</h1>
+  <div class="theme-menu">
+    <div class="theme-input">
+      <ul class="theme-list">
+        <li class="material-icons">dark_mode</li>
+        <li class="material-icons">light_mode</li>
+      </ul>
+      <div class="theme-toggler" (click)="toggleTheme()">
+        <div class="theme-button">
+          <div class="theme-button-overlay"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
