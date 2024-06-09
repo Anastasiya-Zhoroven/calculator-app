@@ -1,0 +1,30 @@
+.calculator-screen {
+  display: flex;
+  border-radius: .5rem;
+  background-color: var(--primary-color-dark);
+  height: 5rem;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
+.calculator-prev {
+  color: var(--text-color-dark);
+}
+
+.calculator-output {
+  color: var(--text-color-dark);
+  font-size: 2.5rem;
+}
+
+.light {
+  &.calculator-screen {
+    background-color: var(--primary-color-light);
+  }
+
+  .calculator-output,
+  .calculator-prev {
+    color: var(--primary-color-dark);
+  }
+}

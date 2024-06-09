@@ -1,0 +1,12 @@
+<div class="calculator-main" [ngClass]="{ 'light': isLightTheme }">
+  <div class="calculator-top">
+    <div *ngFor="let button of buttons.top; let i = index">
+      <button class="calculator-button" (click)="buttonClickHandler(button)">{{ button }}</button>
+    </div>
+  </div>
+  <div class="calculator-bottom">
+    <div *ngFor="let button of buttons.bottom; let i = index">
+      <button class="calculator-button" (click)="buttonClickHandler(button)">{{ button }}</button>
+    </div>
+  </div>
+</div>
